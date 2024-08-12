@@ -1,0 +1,33 @@
+package array.programs;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Scanner;
+
+public class FrequencyOfEachEle {
+
+	public static void main(String[] args) {
+		//int[] A = {10,20,10,20,10,20,10,20};
+		Scanner s = new Scanner(System.in);
+		System.out.println("Enter the no.of elements: ");
+		int n = s.nextInt();
+		int[] A=new int[n];
+		//Input array elements
+		System.out.println("Enter the elements: ");
+		for(int i = 0; i<n; i++) {
+			A[i]=s.nextInt();
+		}
+				
+		Map<Integer, Integer> freq = new HashMap<>();
+		for(int num: A) {
+			if(freq.containsKey(num)) {
+				freq.put(num, freq.get(num)+1);
+			}else {
+					freq.put(num, 1);
+					}
+		}
+		for(Map.Entry<Integer, Integer> entry: freq.entrySet()) {
+			System.out.println("Element: "+entry.getKey()+" "+ "Occurs: "+entry.getValue());
+		}
+	}
+}

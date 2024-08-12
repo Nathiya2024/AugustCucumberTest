@@ -1,0 +1,8 @@
+package array.programs;
+
+public class FrequencyOfEachEle {
+
+	public static void main(String[] args) {
+		
+	}
+}

@@ -1,0 +1,25 @@
+package array.programs;
+
+import java.util.Scanner;
+
+public class PrintEleOfAnArray {
+
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		System.out.println("Enter the no.of Elements: ");
+		int n = s.nextInt();
+		System.out.println("Enter the elements: ");
+		int[] A = new int[n];
+		for(int i = 0;i<n;i++) {
+			A[i]=s.nextInt();
+		}
+		System.out.println("The Array elements: ");
+		printArray(A);
+	}
+		public static void printArray(int[] A) {
+		for(int A1:A) {
+			System.out.println(A1+" ");
+		}
+		}
+	}
+

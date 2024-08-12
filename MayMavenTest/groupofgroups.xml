@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+  <groups>
+  <define name= "Pages">
+  <include name = "Cart Page"/>
+  <include name = "PDP Page"/>
+  <include name = "LoginPage"/>
+  </define>
+  <run>
+  <inclue name = "Regression"/>
+  </run>
+  </groups>
+    <classes>
+      <class name="com.test.groups.GroupOfGroupsSample"/>
+      <class name="com.test.groups.GroupsSampe"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
